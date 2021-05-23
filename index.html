@@ -1,14 +1,475 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dongkun Kim Personal Website</title>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Dongkun Kim's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<body>
-    <p>
-        Hello world!
-    </p>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div>
+
+        <div class="header-content">
+    
+            <nav class="row header-nav-wrap">
+                <ul class="header-nav">
+                    <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="About">About</a></li>
+                    <li><a class="smoothscroll" href="#services" title="Services">Skills</a></li>
+                    <li><a class="smoothscroll" href="#portfolio" title="Works">Research & Projects</a></li>
+                    <li><a class="smoothscroll" href="#awards" title="Awads">Awards & Certifications</a></li>
+                    <li><a class="smoothscroll" href="#footer" title="Contact">Contact</a></li>
+                </ul>
+            </nav> <!-- end header-nav-wrap -->
+
+            <!--
+            <a target="_blank" rel="noopener noreferrer" href="CV.pdf" class="btn btn--stroke btn--small" download>Download CV</a>
+            -->
+
+        </div> <!-- end header-content -->
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> 
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg-3000.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="row hero-content">
+
+            <div class="column large-full">
+
+                <h1>
+                Hello, I'm Dongkun Kim, <br>
+                a junior 
+                <font color="#56da65">Computer Science </font><br>
+                undergraduate based in<br>
+                Washington, DC.
+                </h1>
+
+                <ul class="hero-social">
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dongkun-kim/" title="">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dkim114" title="">GitHub</a>
+                    </li>
+                </ul> <!-- end hero-social -->
+
+            </div> 
+
+        </div> <!-- end hero-content -->
+
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+            </a>
+        </div> <!-- end hero-scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="s-about__section s-about__section--profile">
+
+            <div class="right-vert-line"></div>
+
+            <div class="row">
+                <div class="column large-6 medium-8 tab-full">
+
+                    <div class="section-intro" data-num="01" data-aos="fade-up">
+                        <h3 class="subhead">About Me</h3>
+                        <h1 class="display-1">I'm passionate about learning and facing new challenges.</h1>
+                    </div>
+
+                    <div class="profile-pic" data-aos="fade-up">
+                        <img src="images/profile-pic.jpg" 
+                             srcset="images/profile-pic.jpg 1x, images/profile-pic@2x.jpg 2x" alt="">
+                    </div>
+
+                    <h3 data-aos="fade-up">Profile</h3>
+
+                    <p data-aos="fade-up">
+                    I'm currently a junior studying for a B.S. Degree in Computer Science at The George Washington University.
+                    I have gained experience through my research assistant position at the
+                    GWUSEC research lab for over 16 months. I am most interested in the software development and cybersecurity
+                    field.
+                    </p>
+
+                    <h4 data-aos="fade-up">
+                    The George Washington University <br>
+                    B.S. Degree in Computer Science <br>
+                    Expected Graduation: 2023
+                    </h4><br>
+
+                </div>
+            </div>
+
+        </div> <!-- end s-about__section--profile -->
+
+        <div class="s-about__section">
+
+            <div class="row">
+                <div class="column">
+                    <h3 data-aos="fade-up">Career</h3>
+                </div>
+            </div>
+
+            <div class="row block-large-1-2 block-900-full work-positions">
+
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Verizon</span>
+                                <span class="position__pos">Network Engineering Intern</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                June 2021 - Present
+                            </div>
+                        </div>
+
+                        <p>
+                        Temporary Text.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">GWUSEC</span>
+                                <span class="position__pos">Usable Security and Privacy Research Assistant</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                August 2020 - May 2021
+                            </div>
+                        </div>
+
+                        <p>
+                        Temporary Text.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">GWUSEC</span>
+                                <span class="position__pos">Student Project Assistant</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                May 2020 - August 2020
+                            </div>
+                        </div>
+
+                        <p>
+                        Temporary Text.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">GWUSEC</span>
+                                <span class="position__pos">Undergraduate Research Assistant</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                February 2020 - May 2020
+                            </div>
+                        </div>
+
+                        <p>
+                        Temporary Text.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+
+            </div> <!-- work positions -->
+
+        </div> <!-- end s-about__section -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services target-section h-dark-bg">
+        
+        <div class="row s-services__content">
+
+            <div class="vert-line"></div>
+
+            <div class="column s-services__leftcol">
+                <div class="section-intro" data-num="02" data-aos="fade-up">
+                    <h3 class="subhead">Skills</h3>
+
+                    <h1 class="display-1">
+                    Technical Skills.
+                    </h1>
+                </div>
+
+                <p class="lead" data-aos="fade-up">
+                Programming Languages (Experienced): [ Java, JavaScript, C, HTML ]<br>
+                Programming Languages (Familiar): [ Python, SQL ]<br><br>
+                
+                Languages: [ English, Korean, Spanish ] <br>
+                Software & Tools: [ Git, AWS, VSCode, Vim, Eclipse, Slack, MAXQDA, Qualtrics, Photoshop ]
+                </p>
+
+            </div> <!-- end  s-services--leftcol -->
+
+        </div> <!-- s-services__content -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-testimonials">
+
+        <div class="column s-services__leftcol">
+
+            <div class="right-vert-line"></div>
+
+            <div class="row s-portfolio__header">
+            <div class="column tab-full">
+                <div class="section-intro" data-num="03" data-aos="fade-up">
+                    <h3 class="subhead">Research & Projects</h3>
+                    <div class="column large-7 medium-8 tab-full">
+                        <h1 class="display-1">
+                            A selection of recent research and projects I have worked on.
+                        </h1>
+                    </div>
+                    <h3 data-aos="fade-up">
+                        Examining the Examiners: Students’ Privacy and Security Perceptions of Online Exam Proctoring <br>
+                        Authors: Dr. Adam J. Aviv and David G. Balash
+                    </h3>
+                    <p data-aos="fade-up">
+                    The goal of this research was to investigate the privacy concerns and attitudes of people before and after taking
+                    online exams proctored by these services to develop a better understanding of privacy trade-offs students make to use
+                    an exam proctoring services.
+                    </p>
+
+                    <h3 data-aos="fade-up">
+                        University Database System
+                    </h3>
+                    <p data-aos="fade-up">
+                    Temporary Text.
+                    </p>
+
+                    <h3 data-aos="fade-up">
+                        eCommerce Website
+                    </h3>
+                    <p data-aos="fade-up">
+                    Developed an eCommerce website that utilizes Python Flask and other tools to mimic a web store. The website
+                    integrates a database system that stores item information, past orders, and other user information using mySQL
+                    hosted on AWS. HTML, CSS, and JavaScript were used for the front-end development of the project. Gained more
+                    experience in both front-end and back-end development.
+                    field.
+                    </p>
+
+                </div>
+            </div>
+
+                
+
+        </div> <!-- end s-about__section--profile -->
+    </section>
+
+    <!-- testimonials
+    ================================================== -->
+    <section id="awards" class="s-services target-section h-dark-bg">
+        
+        <div class="row s-services__content">
+
+            <div class="vert-line"></div>
+
+            <div class="column s-services__leftcol">
+                <div class="section-intro" data-num="04" data-aos="fade-up">
+                    <h3 class="subhead">Awards & Certifications</h3>
+
+                    <h1 class="display-1">
+                    Awards & Certifications.
+                    </h1>
+                </div>
+
+                <p class="lead" data-aos="fade-up">
+                - The President’s Volunteer Service Award, 2018 <br>
+                - Maryland Governor Larry J. Hogan’s Governor Citation, 2021 <br>
+                - Baltimore Mayor Brandon M. Scott's Mayoral Proclamation, 2021 <br>
+                - President of the Maryland State Senate William Ferguson’s Presidential Citation, 2021 <br>
+                - Maryland General Assembly’s Senator Susan C. Lee Community Service Award, 2018 <br>
+                - Howard County Certification of Appreciation for Community Service, 2018 <br>
+                - TOPIK Certificate of Proficiency in Korean, 2017 <br>
+                - Certificate of the SAT Test of Proficiency in Korean, 2017 <br>
+                - Dean's Honor List, 2019 - 2021
+                </p>
+
+            </div> <!-- end  s-services--leftcol -->
+
+        </div> <!-- s-services__content -->
+
+    </section> <!-- end s-services -->
+
+
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer id="footer" class="s-footer h-dark-bg">
+        
+        <div class="right-vert-line"></div>
+
+        <div class="row s-footer__main">
+            <div class="column large-6">
+                <div class="section-intro" data-aos="fade-up">
+                    <h3 class="subhead">Get In Touch</h3>
+
+                    <h1 class="display-1">
+                    Thank you for viewing my website. Please feel free to shoot me a message.
+                    </h1>
+                </div>
+            </div>
+
+            <div class="column large-5">
+                <div class="footer-contacts">
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Email
+                        </h5>
+                        <p class="footer-contact-block__content">
+                            <a href="mailto:rlaehdrjskim19@gmail.com">rlaehdrjskim19@gmail.com</a>
+                        </p>
+                    </div> <!-- end footer-contact-block -->
+                    <br>
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Social
+                        </h5>
+                        <ul class="footer-contact-block__list">
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dongkun-kim/" title="">LinkedIn</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/dkim114" title="">GitHub</a></li>
+                        </ul>
+                    </div> <!-- end footer-contact-block -->
+                </div>
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Ethos 2019</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div> <!-- end ss-copyright -->
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
-</html>
